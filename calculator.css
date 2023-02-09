@@ -1,36 +1,46 @@
 body{
+    height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     border-radius: 2vh;
-    background-color: cyan;
+    background-color:#EEEDE7;
     padding: 0%;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
+
 #main{
     display: flex;
     flex-direction: column;
-    background-color: #FA26A0;
+    background-color: #B9B7BD;
     box-shadow: 0vh 2vh black;
     height: fit-content;
     width: fit-content;
     margin: auto;
+    margin-left: 20%;
+
     border: 0.5vh solid black;
     margin-top: 10vh;
     border-radius: 4vh;
 
 }
 
-#display{
+#screen{
     height: 15vh;
     width: 40vh;
-    background-color: #F8D210;
+    background-color: #303437;
     border: 0.3vh solid black;
     margin: 2vh 2vh;
     box-shadow: 0vh -0.5vh black;
     display: flex;
     flex-direction: column;
+    color: #F8FAFD;
 }
 
-#display1{
+#previousScreen{
     display: flex;
     flex-direction: column;
     height: 50%;
@@ -41,7 +51,7 @@ body{
 
 }
 
-#display2{
+#currentScreen{
     display: flex;
     flex-direction: column;
     height: 50%;
@@ -55,7 +65,7 @@ body{
     display: grid;
     height: 45vh;
     width: 40vh;
-    background-color: #FA26A0;
+    background-color: #B9B7BD;
     margin: 2vh 2vh;
 
     grid-template-columns: auto auto auto auto;
@@ -63,7 +73,7 @@ body{
 }
 
 .key{
-    background-color: #F51720;
+    background-color: #868B8E;
     text-align: center;
     padding-top: 3.5vh;
     font-size: 3vh;
@@ -79,4 +89,17 @@ body{
 
 #clear{
     font-weight: 900;
+}
+
+.key:hover{
+    background-color: #595E60;
+}
+
+#textCalculator{
+    font-size: 15vh;
+    color: black;
+    font-family: 'Black Ops One', cursive;
+    display: inline-block;
+    margin-right: 6%;
+    margin-bottom: 7%;
 }
